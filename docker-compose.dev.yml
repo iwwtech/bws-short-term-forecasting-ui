@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+
+  bws-react:
+    build:
+      context: .
+      dockerfile: dockerfile
+    
+    image: bws-react
+    container_name: bws-react
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./react/src:/usr/src/app/src"
+    networks:
+      - stdf-tool_stdft
+    environment:
+      #Using WATCHPACK_POLLING to auto-update container on filechanges
+      - WATCHPACK_POLLING=true
+      
+networks:
+  stdf-tool_stdft:
+    external: true
