@@ -1,6 +1,6 @@
 # B-WaterSmart - Short-Term Demand Forecasting Tool
 
-This repository contains the frontend that was developed as a part of the [B-WaterSmart](https://b-watersmart.eu/) project. The [backend component](https://github.com/iwwtech/bws-stdft) can be found in a separate repository.
+This repository contains the frontend that was developed as a part of the [B-WaterSmart](https://b-watersmart.eu/) project. The [backend component](https://github.com/iwwtech/bws-short-term-forecasting) can be found in a separate repository.
 
 ## Overview
 
